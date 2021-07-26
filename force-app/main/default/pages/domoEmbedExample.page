@@ -1,0 +1,20 @@
+<apex:page controller="domoEmbedExampleController" showHeader="false" cache="false">
+
+    <!-- ----------------------------------------------------------
+        Step 3: This form will be submitted with the embedToken
+        and the action will then take us to the embedded content
+    ----------------------------------------------------------- -->
+
+    <apex:outputPanel rendered="{!embedToken!=null}">
+
+        <form id="embedform" action="https://public.domo.com/{!IF(embed_type='card','cards','embed/pages')}/{!embed_id}" method="post">
+            <input type="hidden" name="embedToken" value="{!embedToken}"/>
+        </form>
+
+        <script>
+            document.getElementById("embedform").submit();
+        </script>
+        
+    </apex:outputPanel>
+
+</apex:page>

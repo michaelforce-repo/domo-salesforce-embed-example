@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>domoEmbedExampleController</members>
+        <members>domoEmbedExampleMock</members>
+        <members>domoEmbedExampleTests</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>domoEmbedExample</members>
+        <name>ApexPage</name>
+    </types>
+    <version>52.0</version>
+</Package>
